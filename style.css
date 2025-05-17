@@ -1,0 +1,126 @@
+/* =======================
+   Reset and Base Styles
+   ======================= */
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #000;
+  color: #505050;
+  font-family: Arial, sans-serif;
+}
+
+/* =======================
+   Main Wrapper Styles
+   Full screen border
+   ======================= */
+
+/* Add a subtle border to every element */
+div, section, article, header, footer, main,container{
+  border: 1px solid #505050;
+  box-sizing: border-box;
+}
+
+/* =======================
+   Div Elements Styles
+   Border and rounding
+   ======================= */
+
+
+/* =======================
+   Top Bar Styles
+   Fixed top-left bar with flex layout
+   ======================= */
+.top-bar {
+  position: fixed;
+  top: 20px; /* 10px (wrapper padding) + 10px */
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #111;
+  padding: 8px 15px;
+  box-shadow: 0 0 10px #555;
+  z-index: 1000;
+}
+
+/* =======================
+   Button in Top Bar
+   ======================= */
+.top-btn {
+  background: transparent;
+  border: 2px solid #505050;
+  color: #505050;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.top-btn:hover {
+  background: #505050;
+  color: #000;
+}
+
+/* =======================
+   Discord Icon in Top Bar
+   ======================= */
+.discord-icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  filter: grayscale(100%) brightness(1.2);
+  transition: filter 0.3s ease;
+}
+
+.discord-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.discord-icon:hover {
+  filter: none; /* Colorful on hover */
+}
+
+/* =======================
+   Main Container Styles
+   Centered below top bar
+   ======================= */
+.container {
+  width: calc(100vw - 100px);
+  margin: 100px auto 0;  /* top:100px, left/right:auto, bottom:0 */
+  text-align: center;
+  background: #111;
+  padding: 20px;
+}
+
+
+.container h1 {
+  color: #505050;
+  font-size: 3rem;
+}
+
+.container p {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+/* =======================
+   Download Button Styles
+   ======================= */
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  font-size: 1.2rem;
+  color: #000;
+  background: #505050;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: #bbb;
+}
